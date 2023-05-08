@@ -1,5 +1,8 @@
 # Movie Posters Angular App
 This project is part of an Angular tutorial for practicing Angular and Typescript.
+The App shows a list of movies with an option to choose any movie, and change the chosen movie anytime.
+
+Live website: https://movie-posters-angular.netlify.app/
 
 ## Development server
 
