@@ -1,0 +1,78 @@
+.movies {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.movie {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  display: flex;
+}
+.movie:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.movie-container {
+  padding: 20px 16px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+a:visited {
+  color: blue;
+}
+
+button {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 6vw;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+@media only screen and (max-width: 600px) {
+  .movies {
+    display: flex;
+    flex-direction: column;
+  }
+  .movie-container,
+  .movie {
+    width: 100vw;
+  }
+  .movie {
+    flex-direction: column;
+  }
+  button {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1900px) {
+  .movies {
+    display: flex;
+    flex-direction: column;
+  }
+  .movie,
+  .movie-container {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  button {
+    width: 20vw;
+  }
+}
